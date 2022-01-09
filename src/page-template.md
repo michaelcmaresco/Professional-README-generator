@@ -1,5 +1,4 @@
-module.exports = (name, github) => {
-    return `
+
     <!DOCTYPE html>
     <html lang="en">
     
@@ -7,14 +6,12 @@ module.exports = (name, github) => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Portfolio Demo</title>
+      <title>Professional README Generator </title>
     </head>
     
     <body>
       <h1>Professional README Generator</h1>
-      <h2><a href="https://github.com/${github}">Github</a></h2>
+      <h2><a href="https://github.com/undefined">Github</a></h2>
     </body>
     </html>
-    `;
-  };
-  
+    

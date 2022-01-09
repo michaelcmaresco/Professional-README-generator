@@ -1,18 +1,18 @@
+// Packages needed for this application
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./src/page-template.js');
 const fs = require('fs');
-
-//Questions 
+// Array of questions for user input
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of the project?',
+        message: 'What is the title of your project? (Required)',
         validate: titleInput => {
             if (titleInput) {
                 return true;
             } else {
-                console.log('Please enter title!');
+                console.log('Please enter your title!');
                 return false;
             }
         }
@@ -20,7 +20,7 @@ const questions = [
     {
         type: 'input',
         name: 'githubUsername',
-        message: 'What is your GitHub Username?',
+        message: 'What is your GitHub Username? (Required)',
         validate: githubInput => {
             if (githubInput) {
                 return true;
@@ -33,7 +33,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'What is your email address?',
+        message: 'What is your email address? (Required)',
         validate: githubInput => {
             if (githubInput) {
                 return true;
@@ -46,7 +46,7 @@ const questions = [
     {
         type: 'input',
         name: 'what',
-        message: 'What is your project and what problem will it solve?',
+        message: 'What is your project and what problem will it solve? (Required)',
         validate: whatInput => {
             if (whatInput) {
                 return true;
@@ -59,7 +59,7 @@ const questions = [
     {
         type: 'input',
         name: 'why',
-        message: 'Why did you create this project?',
+        message: 'Why did you create this project? (Required)',
         validate: whyInput => {
             if (whyInput) {
                 return true;
@@ -72,7 +72,7 @@ const questions = [
     {
         type: 'input',
         name: 'how',
-        message: 'How will someone use this?',
+        message: 'How will someone use this? (Required)',
         validate: howInput => {
             if (howInput) {
                 return true;
@@ -85,7 +85,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Please provide step-by-step installation instructions for your project.',
+        message: 'Please provide step-by-step installation instructions for your project. (Required)',
         validate: installInput => {
             if (installInput) {
                 return true;
@@ -98,7 +98,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide instructions and examples for use.',
+        message: 'Please provide instructions and examples for use. (Required)',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -158,7 +158,7 @@ const questions = [
 // function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('./dist/generated-README.md', fileContent, err => {
+        fs.writeFile('./src/page-template.md', fileContent, err => {
             if (err) {
                 reject(err);
                 return;
