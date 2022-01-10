@@ -2,7 +2,7 @@
 function renderContributingSection(confirmContributers, data) {
     if (!confirmContributers) {
       return `
-    Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
+    No external contributions from third parties will be made. 
       `;
     } else {
       return `
@@ -84,10 +84,6 @@ function renderContributingSection(confirmContributers, data) {
     ${data.installation}
     ## [Usage](#table-of-contents)
     ${data.usage}
-    
-    For more information on how to add screenshots for examples, visit the following website:
-    
-    [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
     
     ${renderLicenseSection(data.license)}
     ## [Contributing](#table-of-contents)

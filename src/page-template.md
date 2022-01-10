@@ -11,7 +11,7 @@
     
     <body>
       <h1>Professional README Generator</h1>
-      <h2><a href="https://github.com/undefined">Github</a></h2>
+      <h2><a href="https://github.com/${github}">Github</a></h2>
     </body>
     </html>
     

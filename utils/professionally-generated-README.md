@@ -1,5 +1,5 @@
 
-    # Professional README Generatpr
+    # Professionally Generated README 
     
      
     ## Table-of-Contents
@@ -12,13 +12,13 @@
     * [Questions](#questions)
     
     ## [Description](#table-of-contents)
-    help generate informative readme files
-    to help wioth readmes 
-    generate a readme 
+    Professionally Generated README - It will automatically generate a README File for new projects
+    To help eliminate time when creating new projects
+    They can download this and use it in their projects
     ## [Installation](#table-of-contents)
-    aserg
+    1. drgb`	2. sbfsbfb	3.sergdfv
     ## [Usage](#table-of-contents)
-    asdefrvd
+    drgb sdfbdg sdfv erbsdt ew sd 
     
     For more information on how to add screenshots for examples, visit the following website:
     
@@ -28,10 +28,10 @@
     ## [Contributing](#table-of-contents)
     
     
-    Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
+    No external contributions from third parties will be made. 
       
     ## [Tests](#table-of-contents)
-    sardhg
+    drgbefgb 
     ## [Questions](#table-of-contents)
     Please contact me using the following links:
     [GitHub](https://github.com/michaelcmaresco)

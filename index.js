@@ -8,7 +8,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?',
+        message: 'What is the title of your project?', //Description - Title of project
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -113,7 +113,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license will you use for your project?',
-        choices: ['agpl', 'apache', 'mit', 'no license']
+        choices: ['utAustin', 'MIT', 'no license']
     },
     {
         type: 'confirm',
@@ -159,7 +159,7 @@ const questions = [
 // function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('./utils/generated-README.md', fileContent, err => {
+        fs.writeFile('./utils/professionally-generated-README.md', fileContent, err => {
             if (err) {
                 reject(err);
                 return;
