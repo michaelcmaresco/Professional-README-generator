@@ -37,7 +37,8 @@
     No external contributions from third parties will be made. 
       
     ## [Tests](#table-of-contents)
-        To test, open whichever code editor you use, specify in its terminal the specific root folder for this project. Then next you woul
+    To test, open whichever code editor you use, specify in its terminal the specific root folder for this project. Then next you would run in the terminal 'node index' which would begin the prompt of questions for the user. 
+    
     ## [Questions](#table-of-contents)
     Please contact me using the following links:
     [GitHub](https://github.com/michaelcmaresco)
