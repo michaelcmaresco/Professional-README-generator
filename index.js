@@ -1,13 +1,14 @@
-// Packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
-// Array of questions for user input
+
+
+//Questions 
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project? (Required)',
+        message: 'What is the title of your project?',
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -20,7 +21,7 @@ const questions = [
     {
         type: 'input',
         name: 'githubUsername',
-        message: 'What is your GitHub Username? (Required)',
+        message: 'What is your GitHub Username? ',
         validate: githubInput => {
             if (githubInput) {
                 return true;
@@ -33,7 +34,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'What is your email address? (Required)',
+        message: 'What is your email address? ',
         validate: githubInput => {
             if (githubInput) {
                 return true;
@@ -46,7 +47,7 @@ const questions = [
     {
         type: 'input',
         name: 'what',
-        message: 'What is your project and what problem will it solve? (Required)',
+        message: 'What is your project and what problem will it solve? ',
         validate: whatInput => {
             if (whatInput) {
                 return true;
@@ -59,7 +60,7 @@ const questions = [
     {
         type: 'input',
         name: 'why',
-        message: 'Why did you create this project? (Required)',
+        message: 'Why did you create this project? ',
         validate: whyInput => {
             if (whyInput) {
                 return true;
@@ -72,7 +73,7 @@ const questions = [
     {
         type: 'input',
         name: 'how',
-        message: 'How will someone use this? (Required)',
+        message: 'How will someone use this? ',
         validate: howInput => {
             if (howInput) {
                 return true;
@@ -85,7 +86,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Please provide step-by-step installation instructions for your project. (Required)',
+        message: 'Please provide step-by-step installation instructions for your project. ',
         validate: installInput => {
             if (installInput) {
                 return true;
@@ -98,7 +99,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide instructions and examples for use. (Required)',
+        message: 'Please provide instructions and examples for use. ',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -123,7 +124,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribute',
-        message: 'Please provide guidelines for contributing. (Required)',
+        message: 'Please provide guidelines for contributing. ',
         when: ({ confirmContributers }) => {
             if (confirmContributers) {
                 return true;
@@ -143,7 +144,7 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'Please provide instructions on how to test the app. (Required)',
+        message: 'Please provide instructions on how to test the app. ',
         validate: testInput => {
             if (testInput) {
                 return true;
