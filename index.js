@@ -1,6 +1,6 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
-const generateMarkdown = require('./src/page-template.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 // Array of questions for user input
 const questions = [
@@ -158,7 +158,7 @@ const questions = [
 // function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('./src/page-template.md', fileContent, err => {
+        fs.writeFile('./utils/generated-README.md', fileContent, err => {
             if (err) {
                 reject(err);
                 return;
