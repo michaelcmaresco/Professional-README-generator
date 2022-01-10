@@ -1,9 +1,7 @@
 # Professional README Generator
     
-    
-    ![badge](https://img.shields.io/badge/license-MIT-blue)
       
-    ## Table-of-Contents
+    # Table-of-Contents
     * [Description](#description)
     * [Installation](#installation)
     * [Usage](#usage)
@@ -14,7 +12,7 @@
     * [Tests](#tests)
     * [Questions](#questions)
     
-    ## [Description](#table-of-contents)
+    # [Description](#table-of-contents)
     The Professional README Generator project aims to help a user generate a README file for a new project. This is extremely useful because when generally creating a README file, it is often tedious and time consuming. This project takes aim at lazy software developers that may not crreate a README file out of sheer laziness or etc. This will eliminate any excuse for NOT creating a README file. 
     I created this project to allow a user to answer pre-written questions, to create  an organizaed/professional README file. 
     After installing all things necessary, the user simply just has to follow and answer every question. Once all completed, the file will be created. Once created it can simply be copied and pasted to maximum time efficiency and professionalness. 
